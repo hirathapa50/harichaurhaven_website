@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galkot Harichaur Haven</title>
+  <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind CDN -->
+  <link rel="stylesheet" href="style.css"/> <!-- Optional, for legacy comparison -->
+</head>
+<body>
+  
+<!-- Navigation Menu -->
+<header class="bg-gray-900 text-white p-4">
+  <div class="flex justify-between items-center">
+    <!-- Left: Hamburger menu (mobile only) -->
+    <button id="menu-toggle" class="md:hidden text-2xl" onclick="toggleMenu()">☰</button>
+
+    <!-- Center: Site title -->
+    <div class="text-lg font-semibold mx-auto md:mx-0">Galkot Harichaur Haven</div>
+  </div>
+
+  <!-- Drawer navigation links -->
+  <nav id="mobile-menu" class="hidden flex flex-col space-y-2 mt-4 md:flex md:flex-row md:space-x-6 md:space-y-0 md:mt-0">
+    <a href="index.html" class="hover:text-yellow-400">Home</a>
+    <a href="about.html" class="hover:text-yellow-400">About Us</a>
+    <a href="facilities.html" class="hover:text-yellow-400">Facilities</a>
+    <a href="special.html" class="hover:text-yellow-400">Local Special</a>
+    <a href="videos.html" class="hover:text-yellow-400">Video Gallery</a>
+    <a href="mobile_videos.html" class="hover:text-yellow-400">Mobile Videos</a>
+    <a href="photos.html" class="hover:text-yellow-400">Photo Gallery</a>
+    <a href="contact.html" class="hover:text-yellow-400">Contact</a>
+    <a href="sitemap.html" class="hover:text-yellow-400">Site Map</a>
+  </nav>  
+</header>
+
+<!-- JavaScript: show/hide menu -->
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('hidden');
+  }
+</script>
+
+  <!-- Banner Section -->
+<section class="text-center py-8 px-4 bg-gray-100">
+  <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+    Welcome to Galkot Harichaur Haven
+  </h1>
+  <img src="images/banner.jpg" alt="Harichaur Haven Banner" class="mx-auto rounded shadow-lg max-w-full h-auto">
+  <p class="text-lg text-gray-700">Your home away from home in the heart of nature.</p>
+</section>
+
+
+  <!-- Photo Grid Section -->
+<section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 p-4 bg-white">
+  <div class="rounded overflow-hidden shadow-md">
+    <img src="images/bedroom1.jpg" alt="View 1" class="w-full h-auto">
+    <p class="text-center text-gray-800 font-medium py-2">Bedroom 1</p>
+  </div>
+  <div class="rounded overflow-hidden shadow-md">
+    <img src="images/bedroom2.jpg" alt="Room 1" class="w-full h-auto">
+    <p class="text-center text-gray-800 font-medium py-2">Bedroom 2</p>
+  </div>
+  <div class="rounded overflow-hidden shadow-md">
+    <img src="images/meetingroom.jpg" alt="Meeting Room" class="w-full h-auto">
+    <p class="text-center text-gray-800 font-medium py-2">Meeting Room</p>
+  </div>
+  <div class="rounded overflow-hidden shadow-md">
+    <img src="images/seminar.jpg" alt="Seminar Hall" class="w-full h-auto">
+    <p class="text-center text-gray-800 font-medium py-2">Seminar Hall</p>
+  </div>
+</section>
+    
+<!-- Footer -->
+<footer class="bg-gray-800 text-white text-center py-6 mt-10">
+  <p class="mb-2">
+    Contact us at: <a href="mailto:harichaurhaven@gmail.com" class="underline hover:text-blue-300">harichaurhaven@gmail.com</a>
+    | Phone & WhatsApp: <a href="tel:+9779851140064" class="underline hover:text-blue-300">+977-9851140064</a>
+  </p>
+
+  <div class="flex justify-center gap-6 mb-2">
+    <a href="https://www.facebook.com/hiranheera" target="_blank" rel="noopener" class="hover:text-blue-400">Facebook</a>
+    <a href="#" class="hover:text-pink-400">Instagram</a>
+    <a href="https://www.youtube.com/@GalkotHarichaurHaven" target="_blank" rel="noopener" class="hover:text-red-500">YouTube</a>
+  </div>
+
+  <p class="w-screen bg-yellow-50 text-gray-800 text-sm text-center -mx-4">
+    © 2025 Galkot Harichaur Haven. All rights reserved.
+  </p>
+  
+</footer>
